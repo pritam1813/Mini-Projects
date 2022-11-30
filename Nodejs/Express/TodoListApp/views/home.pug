@@ -1,16 +1,15 @@
 doctype html
 html(lang="en")
   head
-    title= pageTitle
-    script(type='text/javascript').
-      if (foo) bar(1 + 5);
+    meta(charset=utf-8)
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+    title= title 
+    //- script(type='text/javascript').
+    //-   if (foo) bar(1 + 5);
   body
     h1 Pug - node template engine
     #container.col
-      if youAreUsingPug
-        p You are amazing
-      else
-        p Get on it!
-      p.
-        Pug is a terse and simple templating language with a
-        strong focus on performance and powerful features.
+      form
+        input(type="text" placeholder="Name")
+        input(type="password" placeholder="Password")
+        input(type="button", value="Submit")
